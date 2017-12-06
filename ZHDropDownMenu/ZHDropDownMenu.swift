@@ -167,7 +167,7 @@ public protocol ZHDropDownMenuDelegate:class{
         self.font = UIFont.systemFont(ofSize: 16)
     }
     
-    func showOrHide() {
+    @objc func showOrHide() {
         if isShown {
             UIView.animate(withDuration: 0.3, animations: { () -> Void in
                 self.pullDownButton.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI*2))
